@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_BASE_URL;
+const API_URL = "https://react-fast-pizza-api.onrender.com/api";
 
 export async function getMenu() {
   const res = await fetch(`${API_URL}/menu`);
