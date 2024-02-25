@@ -1,5 +1,7 @@
 const API_URL = import.meta.env.VITE_BASE_URL;
+console.log(API_URL);
 export async function getMenu() {
+  console.log("me");
   const res = await fetch(`${API_URL}/menu`);
 
   // fetch won't throw error on 400 errors (e.g. when URL is wrong), so we need to do it manually. This will then go into the catch block, where the message is set
